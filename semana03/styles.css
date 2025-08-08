@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(24, 24, 24);
+    color:rgb(141, 140, 139);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2 { 
+    text-align: center;
+    
+}
+
+p {
+    text-align: center;
+}
+
+img { 
+    margin: auto;
+    border-radius: 20px;
+    display:flex
+}
+
+a {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.boton-wiki {
+    display: inline-block;
+    background-color: #146116;
+
+    color: white;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-wiki:hover {
+    background-color: #133d15;
+}

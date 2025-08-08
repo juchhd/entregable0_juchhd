@@ -1,0 +1,125 @@
+body {
+    background: linear-gradient(135deg, #543488 0%, #f357a8 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#encabezado {
+    text-align: center;
+    background: rgb(116, 5, 190);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    opacity: 0.9;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.perfil {
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
+    padding: 30px 20px 20px 20px;
+    margin: 30px auto 10px auto;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(116,5,190,0.15);
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 8px rgba(116,5,190,0.2);
+    margin-bottom: 10px;
+}
+
+.perfil h2 {
+    margin: 10px 0 5px 0;
+    color: #fff;
+    font-size: 1.7em;
+}
+.perfil p {
+    color: #f3eaff;
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+.section {
+    background: rgb(116, 5, 190);
+    border-radius: 8px;
+    opacity: 0.9;
+    padding: 20px;
+    margin: 40px auto;
+    width: 80%;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: scale(1.05);
+}
+
+details {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+summary {
+    font-size: 1.3em;
+    font-weight: bold;
+    outline: none;
+}
+
+.extra-text {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.8s ease, opacity 0.8s ease, transform 0.8s ease;
+}
+
+details[open] .extra-text {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+details[open] .extra-text {
+    animation: fadeIn 0.5s ease;
+}
+
+footer{
+ 
+    background: rgb(116, 5, 190);
+        border-radius: 8px;
+        opacity: 0.9;
+        padding: 20px;
+        margin: 40px auto;
+    
+        color: white;
+        text-align: center;
+}
+
